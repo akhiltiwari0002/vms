@@ -12,6 +12,7 @@ class UsersController extends Controller
     public function initialize(): void
     {
         parent::initialize();
+        $this->loadComponent('Flash');
 
         $this->UserMst = $this->fetchTable('UserMst');  
     }
